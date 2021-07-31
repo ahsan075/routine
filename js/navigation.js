@@ -1,4 +1,4 @@
-const list_items = document.querySelectorAll(".list-items");
+const list_items = document.querySelectorAll(".list-items a");
 const close = document.querySelector(".close");
 const navbar = document.querySelector(".navbar");
 const open = document.querySelector(".open");
@@ -15,7 +15,7 @@ const ToggleFunction = (list_items, cls) => {
     });
 };
 
-ToggleFunction(list_items, "active");
+// ToggleFunction(list_items, "active");
 
 const ShowHide = (main, opponent, toggle, hide) => {
     main.addEventListener("click", function () {
@@ -27,3 +27,11 @@ const ShowHide = (main, opponent, toggle, hide) => {
 
 ShowHide(close, open, "moveRight", "hide");
 ShowHide(open, close, "moveRight", "hide");
+
+const currentLocation = location.href;
+
+for (let i = 0; i < list_items.length; i++) {
+    if (list_items[i].href === currentLocation) {
+        list_items[i].parentElement.classList.add("active");
+    }
+}
