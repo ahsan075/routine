@@ -1,0 +1,18 @@
+/* Footer */
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: var(--footerColor);
+}
+
+.footer_para {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: var(--point_0_2);
+    word-spacing: var(--piont_0_3);
+    font-family: var(--signature-Font);
+}
