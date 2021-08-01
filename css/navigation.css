@@ -98,10 +98,12 @@ body {
 
     .blur::after {
         content: "";
-        background-color: #1d1c1c;
+        background-color: #1d1c1cb8;
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0;
+        left: 0;
         opacity: 0.5;
     }
 

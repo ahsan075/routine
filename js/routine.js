@@ -58,7 +58,3 @@ if (dayName == "Saturday" || dayName == "Sunday") {
 day__name.innerHTML = dayName;
 month__name.innerHTML = monthName;
 year.innerHTML = date.getFullYear();
-
-window.addEventListener("resize", function (e) {
-    console.log(window.innerWidth);
-});
