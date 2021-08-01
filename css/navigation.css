@@ -103,7 +103,7 @@ body {
         background-color: #1d1c1cb8;
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         top: 0;
         left: 0;
         opacity: 0.5;
@@ -128,7 +128,7 @@ body {
         justify-content: center;
         box-shadow: 0.1rem 0.1rem 2rem rgba(255, 255, 255, 0.494) inset;
         transition: 0.3s;
-        z-index: 1;
+        z-index: 100;
     }
 
     .moveRight.navbar {
