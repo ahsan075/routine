@@ -195,12 +195,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 540px) {
-    .navbar {
-        width: 20%;
-    }
-}
-
 @media only screen and (max-width: 480px) {
     html {
         font-size: 50%;
