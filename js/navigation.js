@@ -2,6 +2,7 @@ const list_items = document.querySelectorAll(".list-items a");
 const close = document.querySelector(".close");
 const navbar = document.querySelector(".navbar");
 const open = document.querySelector(".open");
+const body = document.querySelector("body");
 
 const ToggleFunction = (list_items, cls) => {
     list_items.forEach((list) => {
@@ -19,6 +20,14 @@ const ToggleFunction = (list_items, cls) => {
 
 const ShowHide = (main, opponent, toggle, hide) => {
     main.addEventListener("click", function () {
+        if (main === close) {
+            body.classList.remove("blur");
+            console.log("work");
+        }
+        if (main === open) {
+            body.classList.add("blur");
+            console.log("work");
+        }
         navbar.classList.toggle(toggle);
         main.classList.add(hide);
         opponent.classList.remove(hide);
