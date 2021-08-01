@@ -32,6 +32,29 @@
     align-items: center;
     box-shadow: 0.1rem 0.1rem 0.8rem -0.2rem gray;
     transition: 0.3s;
+    position: relative;
+}
+
+.cardTop::before {
+    content: "";
+    border: 4rem solid;
+    border-color: transparent rgb(90, 88, 88) transparent transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -22%;
+    left: -20%;
+    z-index: 1;
+}
+
+.cardTop::after {
+    content: "NOW";
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    z-index: 2;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
 }
 
 .card:hover {

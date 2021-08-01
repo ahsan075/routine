@@ -1,6 +1,9 @@
 const day__work__name = document.querySelector(".day__card .work__name");
-
 const night__work__name = document.querySelector(".night__card .work__name");
+const day__card = document.querySelector(".day__card");
+const night__card = document.querySelector(".night__card");
+const dayParent = day__card.parentElement;
+const nightParent = night__card.parentElement;
 
 const day__name = document.querySelector(".day__name");
 const month__name = document.querySelector(".month__name");
@@ -58,3 +61,20 @@ if (dayName == "Saturday" || dayName == "Sunday") {
 day__name.innerHTML = dayName;
 month__name.innerHTML = monthName;
 year.innerHTML = date.getFullYear();
+
+const matchHours = date.getHours();
+
+if (matchHours >= 6 && matchHours < 18) {
+    dayParent.classList.add("cardTop");
+    nightParent.classList.remove("cardTop");
+}
+
+if (matchHours >= 18 && matchHours <= 24) {
+    nightParent.classList.add("cardTop");
+    dayParent.classList.remove("cardTop");
+}
+
+if (matchHours >= 1 && matchHours < 6) {
+    nightParent.classList.add("cardTop");
+    dayParent.classList.remove("cardTop");
+}

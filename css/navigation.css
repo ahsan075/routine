@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--poppins-Font);
+    background-color: #fff;
     overflow-x: hidden;
 }
 
@@ -53,6 +54,7 @@ body {
     letter-spacing: var(--point_0_2);
     word-spacing: var(--piont_0_3);
     font-family: var(--signature-Font);
+    color: #1d1c1c;
 }
 
 .list-items {
