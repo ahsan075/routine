@@ -37,8 +37,9 @@
     margin-bottom: 2rem;
     padding: 0.4rem;
     display: inline-block;
-    border: 2px solid #1d1c1c;
-    border-color: #1d1c1c transparent #1d1c1c transparent;
+    border: 2px solid var(--universal-color);
+    border-color: var(--universal-color) transparent var(--universal-color)
+        transparent;
 }
 
 .project__div {
@@ -92,13 +93,13 @@
 }
 
 .project__name::before {
-    border-color: transparent transparent transparent #1d1c1c;
+    border-color: transparent transparent transparent var(--universal-color);
     left: -10%;
     top: 25%;
 }
 
 .project__name::after {
-    border-color: transparent #1d1c1c transparent transparent;
+    border-color: transparent var(--universal-color) transparent transparent;
     top: 25%;
     right: -10%;
 }
@@ -106,33 +107,42 @@
 .project__link {
     text-decoration: none;
     font-weight: 500;
-    border: 2px solid #1d1c1c;
+    border: 2px solid var(--universal-color);
     padding: 0.3rem 0.7rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    color: #1d1c1c;
+    color: var(--universal-color);
     transition: 0.3s;
 }
 
 .project__link:hover {
-    background-color: #1d1c1c;
+    background-color: var(--universal-color);
     color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
     .all__projects {
-        border: 3px solid #1d1c1c;
+        border: 3px solid var(--universal-color);
         width: 40rem;
         margin-top: 10rem;
     }
 
     .all__projects:nth-child(3) {
         margin-top: 0;
-        border-top: 10px groove #1d1c1cd0;
+        border-radius: 0 0 1rem 0;
     }
     .all__projects:nth-child(2) {
         border-bottom: none;
+        border-radius: 1rem 0 0 0;
+    }
+
+    .allow {
+        border-top: 3px solid #fff;
+    }
+
+    .all__projects:nth-child(2) {
+        border-top: 3px solid var(--universal-color);
     }
 
     .subhead {
@@ -148,6 +158,14 @@
         margin-top: 0;
         position: relative;
         cursor: pointer;
+        background-color: var(--universal-color);
+        color: rgb(102, 97, 97);
+        transition: 0.3s ease-in-out;
+    }
+
+    .allow .subhead {
+        color: #ffffff;
+        letter-spacing: 0.5rem;
     }
 
     .subhead::before {
@@ -198,7 +216,7 @@
     }
 
     .project__link {
-        background-color: #1d1c1c;
+        background-color: var(--universal-color);
         color: #fff;
     }
 }
