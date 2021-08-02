@@ -134,7 +134,7 @@
     transform: translateY(-50%);
     transition: 0.1s ease;
 }
-.active {
+.activate {
     font-size: 0.8rem;
     position: absolute;
     right: 30%;
@@ -151,7 +151,7 @@
     z-index: -1;
     border: none;
 }
-.works:hover .active {
+.works:hover .activate {
     color: rgb(9, 206, 9);
     border: 1px solid rgb(9, 206, 9);
     padding: 0 0.2rem;
@@ -194,7 +194,7 @@
         display: none;
     }
 
-    .active {
+    .activate {
         display: none;
     }
 
