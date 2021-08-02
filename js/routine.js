@@ -41,18 +41,16 @@ const date = new Date();
 const dayName = days[date.getUTCDay()];
 const monthName = monthNames[date.getMonth()];
 
-if (dayName == "Saturday" || dayName == "Sunday") {
+if (dayName == "Saturday" || dayName == "Sunday" || dayName == "Monday") {
     day__work__name.innerHTML = DaysubjectName[0];
-
     night__work__name.innerHTML = NightsubjectName[0];
-} else if (dayName == "Monday" || dayName == "Tuesday") {
+} else if (
+    dayName == "Tuesday" ||
+    dayName == "Wednesday" ||
+    dayName == "Thursday"
+) {
     day__work__name.innerHTML = DaysubjectName[1];
-
     night__work__name.innerHTML = NightsubjectName[1];
-} else if (dayName == "Wednesday" || dayName == "Thursday") {
-    day__work__name.innerHTML = DaysubjectName[0];
-
-    night__work__name.innerHTML = NightsubjectName[0];
 } else {
     day__work__name.innerHTML = "js library";
     night__work__name.innerHTML = "self project";
