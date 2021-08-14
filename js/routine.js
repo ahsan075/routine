@@ -33,7 +33,7 @@ const monthNames = [
     "December",
 ];
 
-const DaysubjectName = ["html/css", "javascript"];
+const DaysubjectName = ["html/css + photoshop", "javascript + photoshop"];
 const NightsubjectName = ["node js", "react js"];
 
 const date = new Date();
